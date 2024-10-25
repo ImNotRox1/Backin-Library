@@ -30,7 +30,7 @@ end
 
 function Lib:New(options)
 	options = Lib:Validate({
-		Name = "UI Library Test"
+		Title = "UI Library Test"
 	}, options or {})
 	
 	local GUI = {
