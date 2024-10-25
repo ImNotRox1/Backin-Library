@@ -948,5 +948,3 @@ function Lib:New(options)
 	
 	return GUI
 end
-
-return Lib
