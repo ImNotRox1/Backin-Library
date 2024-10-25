@@ -699,6 +699,12 @@ function Lib:New(options)
 						Lib:Tween(Toggle["58"], {Visible = false})
 					end
 
+					if options.Default == false then
+						Toggle.State = false
+					elseif options.Default == true then
+						Toggle.State = true
+					end
+
 					options.Callback(Toggle.State)
 				end
 			end
