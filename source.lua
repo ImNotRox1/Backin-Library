@@ -232,7 +232,7 @@ function Lib:New(options)
 	
 	function GUI:NewTab(options)
 		options = Lib:Validate({
-			Name = "Preview Tab",
+			Title = "Preview Tab",
 			Icon = "rbxassetid://115866742341530"
 		}, options or {})
 		
@@ -254,7 +254,7 @@ function Lib:New(options)
 			Tab["18"]["BackgroundTransparency"] = 1;
 			Tab["18"]["Size"] = UDim2.new(1, 0, 0, 23);
 			Tab["18"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-			Tab["18"]["Text"] = options.Name;
+			Tab["18"]["Text"] = options.Title;
 			Tab["18"]["Name"] = [[Inactive Tab]];
 
 
